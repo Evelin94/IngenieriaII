@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego de Piedra, Papel o Tijera </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Juego de Piedra, Papel o Tijera</h1>
+    <div class="hands">
+        <div id="jugador1">
+            <h2>Jugador 1</h2>
+            <img class="hand" src="piedra.png" alt="Piedra" onclick="jugar('jugador1', 'piedra')">
+            <img class="hand" src="papel.png" alt="Papel" onclick="jugar('jugador1', 'papel')">
+            <img class="hand" src="tijera.png" alt="Tijera" onclick="jugar('jugador1', 'tijera')">
+        </div>
+        <div id="jugador2">
+            <h2>Jugador 2</h2>
+            <img class="hand" src="piedra.png" alt="Piedra" onclick="jugar('jugador2', 'piedra')">
+            <img class="hand" src="papel.png" alt="Papel" onclick="jugar('jugador2', 'papel')">
+            <img class="hand" src="tijera.png" alt="Tijera" onclick="jugar('jugador2', 'tijera')">
+        </div>
+    </div>
+    <p id="resultado"></p>
+    <div id="fireworks-container"></div>
+    <p id="ganador"></p>
+    <script src="juego.js"></script>
+</body>
+</html>
